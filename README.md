@@ -37,3 +37,5 @@ if (process.argv[2] === 'run') {
   gen(version)
 }
 ```
+
+[Result example](https://gist.github.com/Akryum/3cc2e3afaf5f7e730a3b9648b7ce4133)

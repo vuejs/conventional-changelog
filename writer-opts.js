@@ -116,7 +116,11 @@ function getWriterOpts () {
       }
       let choice = null
       for (const id in scores) {
-        if (!choice || scores[id] > scores[choice]) {
+        if (
+          (!choice || scores[id] > scores[choice]) &&
+          // Put 'docs' only if there are only docs changes
+          (id !== 'docs' || !choice)
+        ) {
           choice = id
         }
       }
